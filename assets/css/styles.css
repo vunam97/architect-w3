@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 32px 32px;
+}
+
+.header_nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 5;
+}
+
+.header__open,
+.header__close {
+    display: none;
+}
+
+.header__title {
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 4px;
+    margin: 0.5rem 1rem;
+}
+
+.header__title-name {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #000;
+}
+
+.header__title-name:hover {
+    background-color: #ccc;
+}
+
+.header__lists {
+    margin: 0.5rem 1rem;
+    letter-spacing: 4px;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__list {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.header__list:hover {
+    background-color: #ccc;
+}
+
+.header__list a {
+    color: #000;
+    text-decoration: none;
+}
+
+.home__img {
+    position: relative;
+}
+
+.home__img-bg {
+    width: 100%;
+    height: auto;
+}
+
+.home__img-title {
+    position: absolute;
+    margin: 10px 0;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5px;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+.home__img-title b {
+    padding: 8px 16px;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+.project__title {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.projects__content {
+    display: grid;
+    gap: 8px 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects__grid {
+    position: relative;
+}
+
+.projects__img{
+    width: 100%;
+}
+
+.project__name {
+    position: absolute;
+    padding: 8px 16px;
+    top: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.about__title {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.about__description{
+    display: block;
+    margin-bottom: 49px;
+}
+
+.about__info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 16px;   
+}
+
+.about__group {
+    filter: grayscale(75%);
+}
+
+.about__img {
+    width: 100%;
+}
+
+.about__name {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.about__position {
+    font-size: 1rem;
+    color: #959595;
+    margin: 1rem 0;
+}
+
+.about__group-description{
+    display: block;
+    margin: 1rem 0;
+}
+
+.about__contact {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+.about__contact:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.contact__title {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000;   
+}
+
+.contact__description {
+    padding-bottom: 6px;
+}
+
+.contact__inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.contact__name,
+.contact__email,
+.contact__subject,
+.contact__comment {
+    padding: 8px 0 8px 5px;
+    font-size: 1rem;
+}
+
+.contact__send {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin: 16px 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.contact__send:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.map {
+    padding: 0 32px;
+}
+
+.map img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    color: #fff;
+    background-color: #000;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.footer__info{
+    font-size: 1rem;
+}
+
+.footer a {
+    color: #fff;
+}
